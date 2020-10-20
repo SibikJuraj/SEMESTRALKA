@@ -1,0 +1,166 @@
+body {
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #262626;
+    color: #cccccc;
+
+
+}
+
+img {
+    width: 85%;
+    height:auto;
+}
+
+.kategoria {
+    color: #b3b35f;
+    text-align: center;
+}
+
+.kategoria:hover {
+    color: #cccccc;
+}
+
+
+@media (max-width: 991px) {
+    body {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        padding-left: 2%;
+        padding-right: 2%;
+
+    }
+}
+
+
+.forum {
+    font-weight: bold;
+    background-color: #b3b35f;
+    border: 5px #262626 solid;
+}
+
+.forum:hover {
+
+    background-color: #b3b33f;
+    border: 5px #262626 solid;
+
+}
+
+.forum:active {
+
+    background-color: #c9c947;
+    border: 5px #262626 solid;
+}
+
+.forumnova {
+
+    font-weight: bold;
+    background-color: #c7c7a7;
+    border: 5px #262626 solid;
+}
+
+
+
+.inzerat {
+    text-align: left;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #262626;
+    background-color: #b3b35f;
+    border: 5px #b3b35f solid;
+}
+
+.inzerat:hover {
+
+    background-color: #b3b33f;
+    border: 5px #b3b33f solid;
+
+}
+
+.inzerat:active {
+
+    background-color: #c9c947 !important;
+    border: 5px #c9c947 solid !important;
+}
+
+.inadpis {
+    margin-left: 2%;
+    font-variant-caps: small-caps;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+
+.itext {
+    margin-top: 1%;
+    margin-bottom: inherit;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.icena {
+    text-align: right;
+    font-weight: bolder;
+    font-size: large;
+}
+
+@media (max-width: 430px) {
+    .icena {
+        align-content: stretch;
+
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    background-color: #cccccc;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.navbar-toggler {
+    background-color: #b3b35f;
+}
+
+.menu ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.menu ul li {
+    display: inline-block;
+
+    background-color: #b3b35f;
+    box-shadow: none;
+    color: #f2f2f2;
+
+}
+
+.menu ul li:hover{
+    transform:translate(-5px, -5px);
+    background-color: #b3b33f;
+    box-shadow: 5px 5px #1a1a1a;
+
+}
+
+.menu ul li:active{
+    background-color: #b3b33f;
+    transform:translate(0px, 0px);
+    box-shadow: none;
+}
