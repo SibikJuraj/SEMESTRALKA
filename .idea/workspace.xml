@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a65bd77-287d-4030-9dc6-36e71cf66c48" name="Default Changelist" comment="verzia 1.0" />
+    <list default="true" id="0a65bd77-287d-4030-9dc6-36e71cf66c48" name="Default Changelist" comment="verzia 1.0">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1j607rJePrLadCAeTyygSkPOHK0" />
@@ -31,6 +38,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -46,7 +54,7 @@
       <workItem from="1603109071413" duration="6122000" />
       <workItem from="1603132616962" duration="6018000" />
       <workItem from="1603187295405" duration="470000" />
-      <workItem from="1603197175653" duration="30269000" />
+      <workItem from="1603197175653" duration="30886000" />
     </task>
     <task id="LOCAL-00001" summary="verzia 1.0">
       <created>1603227800576</created>
@@ -55,7 +63,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603227800576</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="verzia 1.0">
+      <created>1603228249377</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603228249377</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -66,18 +81,38 @@
     <option name="LAST_COMMIT_MESSAGE" value="verzia 1.0" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="559" y="186" key="#Deployment" timestamp="1603228242882">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="559" y="186" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1603228242882" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603228492107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603228492107" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603132799712">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603132799712" />
-    <state x="558" y="115" key="CommitChangelistDialog2" timestamp="1603228048698">
+    <state x="558" y="115" key="CommitChangelistDialog2" timestamp="1603228527520">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="558" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603228048698" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603228194999">
+    <state x="558" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603228527520" />
+    <state x="740" y="260" key="FileChooserDialogImpl" timestamp="1603228702323">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603228194999" />
+    <state x="740" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603228702323" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603228259495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603228259495" />
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603228509421">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603228509421" />
+    <state x="692" y="363" key="git4idea.ui.GitTagDialog" timestamp="1603228354909">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="692" y="363" key="git4idea.ui.GitTagDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603228354909" />
     <state x="616" y="235" key="run.anything.popup" timestamp="1603220787215">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
