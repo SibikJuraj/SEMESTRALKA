@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a65bd77-287d-4030-9dc6-36e71cf66c48" name="Default Changelist" comment="upravene inzeraty">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="0a65bd77-287d-4030-9dc6-36e71cf66c48" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/forum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inzeraty.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kategorie.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registracia.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secondsite.html" beforeDir="false" afterPath="$PROJECT_DIR$/secondsite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site.html" beforeDir="false" afterPath="$PROJECT_DIR$/site.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inzeraty.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kategorie.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thirdsite.html" beforeDir="false" afterPath="$PROJECT_DIR$/thirdsite.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +65,8 @@
       <workItem from="1603187295405" duration="470000" />
       <workItem from="1603197175653" duration="30886000" />
       <workItem from="1605192546295" duration="2939000" />
-      <workItem from="1605351952801" duration="8545000" />
+      <workItem from="1605351952801" duration="9014000" />
+      <workItem from="1605527115697" duration="7013000" />
     </task>
     <task id="LOCAL-00001" summary="verzia 1.0">
       <created>1603227800576</created>
@@ -84,7 +89,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605192741257</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="upravena struktura inzeratov a css s nimi spojene">
+      <created>1605360649304</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605360649304</updated>
+    </task>
+    <task id="LOCAL-00005" summary="premenovane html stranky">
+      <created>1605360867152</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605360867152</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,33 +112,43 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="verzia 1.0" />
     <MESSAGE value="upravene inzeraty" />
-    <option name="LAST_COMMIT_MESSAGE" value="upravene inzeraty" />
+    <MESSAGE value="upravena struktura inzeratov a css s nimi spojene" />
+    <MESSAGE value="premenovane html stranky" />
+    <option name="LAST_COMMIT_MESSAGE" value="premenovane html stranky" />
   </component>
   <component name="WindowStateProjectService">
     <state x="559" y="186" key="#Deployment" timestamp="1603228242882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="559" y="186" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1603228242882" />
+    <state x="667" y="162" key="#PHP" timestamp="1605534621523">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="162" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1605534621523" />
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603228492107">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603228492107" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603132799712">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605534692731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603132799712" />
-    <state x="558" y="115" key="CommitChangelistDialog2" timestamp="1605360487800">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605534692731" />
+    <state x="558" y="115" key="CommitChangelistDialog2" timestamp="1605360866600">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="558" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605360487800" />
+    <state x="558" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605360866600" />
     <state x="740" y="260" key="FileChooserDialogImpl" timestamp="1605195501840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605195501840" />
-    <state x="607" y="261" key="Vcs.Push.Dialog.v2" timestamp="1605192747660">
+    <state x="795" y="442" key="NewPhpFileDialog" timestamp="1605533877813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="607" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605192747660" />
+    <state x="795" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605533877813" />
+    <state x="607" y="261" key="Vcs.Push.Dialog.v2" timestamp="1605360869462">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="607" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605360869462" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603228509421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -128,9 +157,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="692" y="363" key="git4idea.ui.GitTagDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603228354909" />
-    <state x="616" y="235" key="run.anything.popup" timestamp="1603220787215">
+    <state x="616" y="235" key="run.anything.popup" timestamp="1605530995837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603220787215" />
+    <state x="616" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605530995837" />
   </component>
 </project>

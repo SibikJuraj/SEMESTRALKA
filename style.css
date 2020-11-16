@@ -6,19 +6,17 @@ body {
 
 }
 
+
 .kategoria img{
     width: 85%;
     height:auto;
 }
 
 .kategoria {
-    color: #b3b35f;
+    color: #262626;
     text-align: center;
 }
 
-.kategoria:hover {
-    color: #cccccc;
-}
 
 
 .forum {
@@ -27,18 +25,6 @@ body {
     border: 5px #262626 solid;
 }
 
-.forum:hover {
-
-    background-color: #b3b33f;
-    border: 5px #262626 solid;
-
-}
-
-.forum:active {
-
-    background-color: #c9c947;
-    border: 5px #262626 solid;
-}
 
 .forumnova {
 
@@ -54,7 +40,7 @@ body {
     margin-bottom: 1%;
     color: #262626;
     background-color: #b3b35f;
-    border: 5px #b3b35f solid;
+    font-weight: normal !important;
 }
 
 .inzerat hr{
@@ -87,17 +73,28 @@ body {
 
 }
 
-.inzerat:hover {
-
-    background-color: #b3b33f;
-    border: 5px #b3b33f solid;
+.tlacidlo {
+    border-radius: 25px;
+    background-color: #b3b35f;
+    box-shadow: none ;
+    border: 5px #262628 solid;
+    font-weight: bold;
 
 }
 
-.inzerat:active {
+.tlacidlo:hover {
 
-    background-color: #c9c947 !important;
-    border: 5px #c9c947 solid !important;
+    transform:translate(-5px, -5px);
+    color: #f2f2f2;
+    background-color: #b3b33f;
+    box-shadow: 5px 5px #1a1a1a;
+}
+
+.tlacidlo:active {
+
+    background-color: #b3b33f;
+    transform:translate(0px, 0px);
+    box-shadow: none;
 }
 
 
@@ -106,6 +103,16 @@ body {
     text-align: left ;
     font-weight: bolder;
     font-size: large;
+}
+
+.active {
+    border-radius: 25px;
+    box-shadow: none ;
+    border: 3px #b3b33f solid;
+}
+
+.nastred {
+    text-align: center;
 }
 
 
@@ -134,27 +141,6 @@ table {
     font-weight: bold;
 }
 
-.menu ul li {
-    display: inline-block;
-
-    background-color: #b3b35f;
-    box-shadow: none;
-    color: #f2f2f2;
-
-}
-
-.menu ul li:hover{
-    transform:translate(-5px, -5px);
-    background-color: #b3b33f;
-    box-shadow: 5px 5px #1a1a1a;
-
-}
-
-.menu ul li:active{
-    background-color: #b3b33f;
-    transform:translate(0px, 0px);
-    box-shadow: none;
-}
 
 @media (max-width: 1200px) {
 
