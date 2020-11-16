@@ -48,36 +48,26 @@
 
 <div class="container-fluid">
     <form action="inzeraty.php" class="nastred">
-        <label for="prezyvka">Prezývka:</label>
+        <label for="pmeno">Používateľské meno:</label>
         <br/>
-        <input id="prezyvka" type="text" name="prezyvka">
+        <input class="form-control nastred" id="pmeno" type="text" name="pmeno" required>
         <br/>
-
-        <label for="meno">Meno:</label>
-        <br/>
-        <input id="meno" type="text" name="meno">
-        <br/>
-
-        <label for="priezvisko">Priezvisko:</label>
-        <br/>
-        <input id="priezvisko" type="text" name="priezvisko">
-        <br/>
-
 
         <label for="heslo">Heslo:</label>
         <br/>
-        <input id="heslo" type="password" name="heslo">
+        <input class="form-control nastred" id="heslo" type="password" name="heslo" required>
         <br/>
 
-        <label for="potvrdenie hesla">Potvrdenie hesla:</label>
+        <label for="potvrdenie_hesla">Potvrdenie hesla:</label>
         <br/>
-        <input id="potvrdenie hesla" type="password" name="potvrdenie hesla">
+        <input class="form-control nastred" id="potvrdenie_hesla" type="password" name="potvrdenie_hesla" required>
         <br/>
-
 
         <br/>
         <input type="submit" value="Registrovať sa" class="btn tlacidlo">
     </form>
+
+
 
 
 </div>

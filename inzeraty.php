@@ -1,3 +1,7 @@
+<?php
+require "Spravca.php";
+?>
+
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -45,116 +49,16 @@
 <h1 >Nové inzeráty</h1>
 <hr/>
 
-
-<div class="tlacidlo container-fluid btn btn-large btn-block inzerat ">
-
-
-    <h3>Bicykel na predaj</h3>
-    <hr/>
-
-    <div class="row">
-        <div class="col-lg-9 col-md-8 col-sm-8 col-7">
-            <p>
-                Mám na predaj bicykel značky ukrajinaMám na predaj bicykel značky ukrajinaMám na predaj bicykel značky ukrajinaMám na predaj bicykel značky ukrajinaMám na predaj bicykel značky ukrajinaMám na predaj bicykel značky ukrajinaMám na predaj bicykel značky ukrajinaMám na predaj bicykel značky ukrajinaMám na predaj bicykel značky ukrajinaMám na predaj bicykel značky ukrajinaMám na predaj bicykel značky ukrajinaMám na predaj bicykel značky ukrajinaMám na predaj bicykel značky ukrajinaMám na predaj bicykel značky ukrajinaMám na predaj bicykel značky ukrajinaMám na predaj bicykel značky ukrajinaMám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina Mám na predaj bicykel značky ukrajina
-            </p>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-4 col-5">
-            <img src="https://www.bazos.sk/img/1t/847/116457847.jpg" alt="" class="img-fluid ">
-        </div>
-
-    </div>
-
-    <hr/>
-    <div class="icena">
-        <p>
-            Cena : 50 €
-        </p>
-    </div>
+<div class="nastred">
+    <a href="inzeraty.php" class="btn tlacidlo">+ Pridaj inzerát +</a>
 </div>
 
-<div class="tlacidlo container-fluid btn btn-large btn-block inzerat ">
 
+<?php
+$spravca = new Spravca();
+$spravca->vypisInzeraty();
 
-    <h3>Predávam starý favorit</h3>
-    <hr/>
-
-    <div class="row">
-        <div class="col-lg-9 col-md-8 col-sm-8 col-7">
-            <p>
-                Už ho tu mám nejaký ten víkend a rozhodol som sa ho predať.
-            </p>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-4 col-5">
-            <img src="https://forumfoto.mtbiker.sk/400/28933_favorit-renovacia_59d514fe22c7c.jpg" alt="" class="img-fluid">
-        </div>
-
-    </div>
-
-    <hr/>
-    <div class="icena">
-        <p>
-            Cena : 145 €
-        </p>
-    </div>
-</div>
-
-<div class="tlacidlo container-fluid btn btn-large btn-block inzerat ">
-
-
-    <h3>Predaj PC</h3>
-    <hr/>
-
-    <div class="row">
-        <div class="col-lg-9 col-md-8 col-sm-8 col-7">
-            <p>
-                Predávam tento pc, všetky komponenty sú v TOP stave, vysoký výkon, neprehrieva sa, utiahne najnovšie hry na ULTRA detaily.
-            </p>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-4 col-5">
-            <img src="https://i.redd.it/8b8u4y3vxya21.jpg" alt="" class="img-fluid">
-        </div>
-
-    </div>
-
-    <hr/>
-    <div class="icena">
-        <p>
-            Cena : 444 €
-        </p>
-    </div>
-</div>
-
-<div class="tlacidlo container-fluid btn btn-large btn-block inzerat ">
-
-
-    <h3>Golfovy vozík na predaj</h3>
-    <hr/>
-
-    <div class="row">
-        <div class="col-lg-9 col-md-8 col-sm-8 col-7">
-            <p>
-                Posledný rok už nehrávam moc golf pretože ma neustále bolia kríže no a na tento golfový vozík len sadal prach tak som
-                sa rozhodol, že ho predám. CENA PEVNÁ.
-            </p>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-4 col-5">
-            <img src="https://img.blesk.cz/img/1/full/194139_v0.jpg?v=0" alt="" class="img-fluid">
-        </div>
-
-    </div>
-
-    <hr/>
-    <div class="icena">
-        <p>
-            Cena : 21400 €
-        </p>
-    </div>
-</div>
-
+?>
 
 
 </body>

@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -37,45 +40,43 @@
 
         </div>
         <a href="login.php" ><strong>Prihlásiť sa</strong></a>
-
     </nav>
 
 
 </header>
 
-<h1 >Prihlásiť sa</h1>
+<h1 >Aktuálny inzerát</h1>
 <hr/>
-
-<div class="container-fluid">
-    <form action="inzeraty.php" class="nastred">
-        <label for="pmeno">Používateľské meno:</label>
-        <br/>
-        <input class="form-control nastred" id="pmeno" type="text" name="pmeno" required>
-        <br/>
-
-        <label for="heslo">Heslo:</label>
-        <br/>
-        <input class="form-control nastred" id="heslo" type="password" name="heslo" required>
-        <br/>
-
-        <br/>
-        <input type="submit" value="Prihlásiť sa" class="btn tlacidlo">
-    </form>
+    <h3 class="nastred">PREDAJ PC</h3>
 
 
+
+<div class="container-fluid inzerat">
+
+
+    <h3>Predaj PC</h3>
+    <hr/>
+
+    <div class="row">
+        <div class="col-lg-9 col-md-8 col-sm-8 col-7">
+            <p>
+                Predávam tento pc, všetky komponenty sú v TOP stave, vysoký výkon, neprehrieva sa, utiahne najnovšie hry na ULTRA detaily.
+            </p>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-4 col-5">
+            <img src="https://i.redd.it/8b8u4y3vxya21.jpg" alt="" class="img-fluid">
+        </div>
+
+    </div>
+
+    <hr/>
+    <div class="icena">
+        <p>
+            Cena : 444 €
+        </p>
+    </div>
 </div>
-
-<br/>
-
-<div class="container-fluid">
-    <p class="nastred">
-        Ešte nemáš účet? <a href="registracia.php"><strong>Zaregistruj sa!</strong></a></p>
-</div>
-
-
-
-
-
 
 
 </body>
