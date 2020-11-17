@@ -55,14 +55,52 @@ require"../Spravca.php";
 $spravca = Spravca::getInstance();
 $inzerat = $spravca->getDatabaza()->getInzerat((int) $_GET['id']);
 ?>
+<form action="inzeraty.php" method="post">
+
+    <input type="hidden" id="id" name="id" value="<?php echo $inzerat->getId()?>">
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="titulok">Titulok:</label>
+            <br/>
+            <input class="form-control" id="titulok" type="text" name="titulok" value="<?php echo $inzerat->getTitulok()?>" maxlength="255" required>
+            <br/>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="cena">Cena:</label>
+            <br/>
+            <input class="form-control" id="cena" type="number" step="any" name="cena" value="<?php echo $inzerat->getCena() ?>" min ="0" max="1000000" required>
+            <br/>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="text">Text:</label>
+        <br/>
+        <textarea class="form-control" rows="5" id="text" type="text" name="text" required><?php echo $inzerat->getText()?></textarea>
+        <br/>
+    </div>
+
+
+
+    <div class="form-group">
+        <label for="obrazok">URL obrázka:</label>
+        <br/>
+        <input class="form-control-file " id="obrazok" type="url" name="obrazok" value="<?php echo $inzerat->getObrazok() ?>" required>
+        <br/>
+
+    </div>
+
+
+    <br/>
+    <input type="submit" value="Upraviť inzerát" class="btn tlacidlo" name="update">
+</form>
+
+
 
 <div class="container-fluid ">
 
-    <?php
-    $spravca = Spravca::getInstance();
-    $spravca->doplnUdaje();
-
-    ?>
 
 
 </div>

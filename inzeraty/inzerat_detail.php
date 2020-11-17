@@ -52,9 +52,33 @@ require"../Spravca.php";
 
 <?php
 $spravca = Spravca::getInstance();
-$spravca->inzeratDetail();
 $inzerat = $spravca->getDatabaza()->getInzerat((int) $_GET['id']);
 ?>
+
+<div class="container-fluid inzerat-detail">
+
+    <h3><?php echo $inzerat->getTitulok() ?></h3>
+    <hr/>
+
+    <div class="row">
+        <div class="col-lg-9 col-md-8 col-sm-8 col-7">
+            <p><?php echo $inzerat->getText() ?></p>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-4 col-5">
+            <img src="<?php echo $inzerat->getObrazok() ?>" alt="" class="img-fluid">
+        </div>
+    </div>
+
+    <hr/>
+
+   <div class="icena">
+        <p>Cena : <?php echo $inzerat->getCena() ?> €</p>
+   </div>
+
+</div>
+
+
 
 
 <div class="container-fluid">

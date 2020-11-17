@@ -78,7 +78,7 @@
 
 
         <div class="form-group">
-            <label for="obrazok">Obrázok:</label>
+            <label for="obrazok">URL obrázka:</label>
             <br/>
             <input class="form-control-file " id="obrazok" type="url" name="obrazok" value="" required>
             <br/>
