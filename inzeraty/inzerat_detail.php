@@ -49,7 +49,6 @@ require"../Spravca.php";
 
 <h1 >Aktuálny inzerát</h1>
 <hr/>
-    <h3 class="nastred">PREDAJ PC</h3>
 
 <?php
 $spravca = Spravca::getInstance();

@@ -44,7 +44,7 @@
 
 </header>
 
-<h1 >Nový inzerát</h1>
+<h1 >Pridaj nový inzerát</h1>
 <hr/>
 
 

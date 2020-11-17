@@ -47,7 +47,7 @@ require"../Spravca.php";
 
 </header>
 
-<h1 >Nový inzerát</h1>
+<h1 >Edituj inzerát</h1>
 <hr/>
 
 
