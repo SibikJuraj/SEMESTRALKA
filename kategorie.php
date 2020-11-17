@@ -24,7 +24,7 @@
         <div class="menu collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a href="inzeraty.php" class="btn btn-block tlacidlo">Nové inzeráty</a>
+                    <a href="inzeraty/inzeraty.php" class="btn btn-block tlacidlo">Nové inzeráty</a>
                 </li>
                 <li class="nav-item active">
                     <a href="kategorie.php" class="btn btn-block tlacidlo">Kategórie</a>

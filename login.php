@@ -24,7 +24,7 @@
         <div class="menu collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a href="inzeraty.php" class="btn btn-block tlacidlo">Nové inzeráty</a>
+                    <a href="inzeraty/inzeraty.php" class="btn btn-block tlacidlo">Nové inzeráty</a>
                 </li>
                 <li class="nav-item">
                     <a href="kategorie.php" class="btn btn-block tlacidlo">Kategórie</a>
@@ -47,7 +47,7 @@
 <hr/>
 
 <div class="container-fluid">
-    <form action="inzeraty.php" class="nastred">
+    <form action="inzeraty/inzeraty.php" class="nastred">
         <label for="pmeno">Používateľské meno:</label>
         <br/>
         <input class="form-control nastred" id="pmeno" type="text" name="pmeno" required>

@@ -1,3 +1,8 @@
+<?php
+require"../Spravca.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -9,7 +14,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -23,46 +29,46 @@
         <div class="menu collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a href="inzeraty/inzeraty.php" class="btn btn-block tlacidlo">Nové inzeráty</a>
+                    <a href="inzeraty.php" class="btn btn-block tlacidlo">Nové inzeráty</a>
                 </li>
                 <li class="nav-item">
-                    <a href="kategorie.php" class="btn btn-block tlacidlo">Kategórie</a>
+                    <a href="../kategorie.php" class="btn btn-block tlacidlo">Kategórie</a>
                 </li>
-                <li class="nav-item active">
-                    <a href="forum.php" class="btn btn-block tlacidlo">Fórum</a>
+                <li class="nav-item">
+                    <a href="../forum.php" class="btn btn-block tlacidlo">Fórum</a>
                 </li>
 
             </ul>
 
         </div>
-        <a href="login.php" ><strong>Prihlásiť sa</strong></a>
+        <a href="../login.php" ><strong>Prihlásiť sa</strong></a>
     </nav>
 
 
 </header>
 
-<h1 >Fórum</h1>
+<h1 >Nový inzerát</h1>
 <hr/>
 
 
-<div class=" container">
+<?php
+$spravca = Spravca::getInstance();
+$inzerat = $spravca->getDatabaza()->getInzerat((int) $_GET['id']);
+?>
 
-    <div class="row">
-        <div class="tlacidlo forum btn-block btn-large col-lg-12 col-md-12 col-sm-12 col-12 btn">
-            Návrhy na zlepšenie </div>
-        <div class="tlacidlo forum col-lg-12 col-md-12 col-sm-12 col-12 btn">
-            Problémy </div>
-        <div class="tlacidlo forumnova offset-lg-3 offset-md-3 offset-sm-4 offset-4 col-lg-6 col-md-6 col-sm-4 col-4 btn ">
-            Začať novú diskusiu </div>
+<div class="container-fluid ">
 
+    <?php
+    $spravca = Spravca::getInstance();
+    $spravca->doplnUdaje();
 
-    </div>
+    ?>
+
 
 </div>
 
 
-
-
 </body>
+
 
 </html>

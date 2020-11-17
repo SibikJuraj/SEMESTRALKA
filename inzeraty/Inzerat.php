@@ -4,17 +4,35 @@ declare(strict_types=1);
 class Inzerat
 {
 
+    private int $id;
     private string $titulok;
     private string $text;
     private float $cena;
     private string $obrazok;
 
-    public function __construct(string $titulok, string $text, float $cena, string $obrazok)
+    public function __construct(int $id, string $titulok, string $text, float $cena, string $obrazok)
     {
         $this->titulok = $titulok;
         $this->text = $text;
         $this->cena = $cena;
         $this->obrazok = $obrazok;
+        $this->id = $id;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId(int $id): void
+    {
+        $this->id = $id;
     }
 
     /**

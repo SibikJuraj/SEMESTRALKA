@@ -1,5 +1,6 @@
 <?php
-require "Spravca.php";
+require"../Spravca.php";
+
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +15,7 @@ require "Spravca.php";
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -27,38 +28,50 @@ require "Spravca.php";
 
         <div class="menu collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a href="inzeraty.php" class="btn btn-block tlacidlo">Nové inzeráty</a>
                 </li>
                 <li class="nav-item">
-                    <a href="kategorie.php" class="btn btn-block tlacidlo">Kategórie</a>
+                    <a href="../kategorie.php" class="btn btn-block tlacidlo">Kategórie</a>
                 </li>
                 <li class="nav-item">
-                    <a href="forum.php" class="btn btn-block tlacidlo">Fórum</a>
+                    <a href="../forum.php" class="btn btn-block tlacidlo">Fórum</a>
                 </li>
 
             </ul>
 
         </div>
-        <a href="login.php" ><strong>Prihlásiť sa</strong></a>
+        <a href="../login.php" ><strong>Prihlásiť sa</strong></a>
     </nav>
 
 
 </header>
 
-<h1 >Nové inzeráty</h1>
+<h1 >Aktuálny inzerát</h1>
 <hr/>
-
-<div class="nastred">
-    <a href="inzeraty.php" class="btn tlacidlo">+ Pridaj inzerát +</a>
-</div>
-
+    <h3 class="nastred">PREDAJ PC</h3>
 
 <?php
-$spravca = new Spravca();
-$spravca->vypisInzeraty();
-
+$spravca = Spravca::getInstance();
+$spravca->inzeratDetail();
+$inzerat = $spravca->getDatabaza()->getInzerat((int) $_GET['id']);
 ?>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <a href="inzerat_edit.php?id=<?php echo $inzerat->getId()?>" class="btn tlacidlo edit col-sm-6 col-12">Editovať inzerát</a>
+        <form class="col-sm-6 " action="inzeraty.php" method="post">
+            <input type="hidden" id="id" name="id" value="<?php echo $inzerat->getId() ?>">
+            <input class="btn tlacidlo danger col-12" id="vymazat" type="submit" name="vymazat" value="Vymazať inzerát" >
+
+        </form>
+
+
+    </div>
+
+</div>
+
 
 
 </body>

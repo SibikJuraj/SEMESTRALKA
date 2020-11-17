@@ -1,5 +1,6 @@
-
-
+<?php
+require "../Spravca.php";
+?>
 
 <!DOCTYPE html>
 <html lang="sk">
@@ -13,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -26,57 +27,38 @@
 
         <div class="menu collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a href="inzeraty.php" class="btn btn-block tlacidlo">Nové inzeráty</a>
                 </li>
                 <li class="nav-item">
-                    <a href="kategorie.php" class="btn btn-block tlacidlo">Kategórie</a>
+                    <a href="../kategorie.php" class="btn btn-block tlacidlo">Kategórie</a>
                 </li>
                 <li class="nav-item">
-                    <a href="forum.php" class="btn btn-block tlacidlo">Fórum</a>
+                    <a href="../forum.php" class="btn btn-block tlacidlo">Fórum</a>
                 </li>
 
             </ul>
 
         </div>
-        <a href="login.php" ><strong>Prihlásiť sa</strong></a>
+        <a href="../login.php" ><strong>Prihlásiť sa</strong></a>
     </nav>
 
 
 </header>
 
-<h1 >Aktuálny inzerát</h1>
+<h1 >Nové inzeráty</h1>
 <hr/>
-    <h3 class="nastred">PREDAJ PC</h3>
 
-
-
-<div class="container-fluid inzerat">
-
-
-    <h3>Predaj PC</h3>
-    <hr/>
-
-    <div class="row">
-        <div class="col-lg-9 col-md-8 col-sm-8 col-7">
-            <p>
-                Predávam tento pc, všetky komponenty sú v TOP stave, vysoký výkon, neprehrieva sa, utiahne najnovšie hry na ULTRA detaily.
-            </p>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-4 col-5">
-            <img src="https://i.redd.it/8b8u4y3vxya21.jpg" alt="" class="img-fluid">
-        </div>
-
-    </div>
-
-    <hr/>
-    <div class="icena">
-        <p>
-            Cena : 444 €
-        </p>
-    </div>
+<div class="nastred">
+    <a href="inzerat_novy.php" class="btn tlacidlo">+ Pridaj inzerát +</a>
 </div>
+
+
+<?php
+$spravca = Spravca::getInstance();
+$spravca->vypisInzeraty();
+
+?>
 
 
 </body>

@@ -6,79 +6,19 @@ body {
 
 }
 
-
-.kategoria img{
-    width: 85%;
-    height:auto;
+.danger {
+    background-color: #d9534f !important;
 }
 
-.kategoria {
-    color: #262626;
-    text-align: center;
+.edit {
+    background-color: #5bc0de !important;
 }
 
-
-
-.forum {
-    font-weight: bold;
-    background-color: #b3b35f;
-    border: 5px #262626 solid;
-}
-
-
-.forumnova {
-
-    font-weight: bold;
-    background-color: #c7c7a7;
-    border: 5px #262626 solid;
-}
-
-
-.inzerat {
-    border-radius: 25px;
-    text-align: left;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    color: #262626;
-    background-color: #b3b35f;
-    border: 5px #b3b35f solid;
-    font-weight: normal !important;
-}
-
-.inzerat hr{
-    background-color: #262626;
-    margin: 10px 0 10px;
-}
-
-.inzerat img{
-    max-height: 150px;
-    float: right;
-    margin-top: 1%;
-    margin-bottom: 1%;
-
-}
-
-.inzerat h3{
-    margin-left: 2%;
-    font-variant-caps: small-caps;
-    font-weight: bolder;
-    font-size: x-large;
-}
-
-.inzerat p{
-    margin-top: 1%;
-    margin-bottom: inherit;
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-
-}
 
 .tlacidlo {
     border-radius: 25px;
-    background-color: #b3b35f;
     box-shadow: none ;
+    background-color: #b3b35f;
     border: 5px #262628 solid;
     font-weight: bold;
 
@@ -98,6 +38,105 @@ body {
     transform:translate(0px, 0px);
     box-shadow: none;
 }
+
+
+
+.kategoria img{
+    width: 85%;
+    height:auto;
+}
+
+.kategoria {
+    color: #262626;
+    text-align: center;
+}
+
+
+.inzerat {
+    border-radius: 25px;
+    text-align: left;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #262626;
+    background-color: #b3b35f;
+    font-weight: normal !important;
+}
+
+.inzerat hr{
+    background-color: #262626;
+    margin: 10px 0 10px;
+}
+
+.inzerat img{
+    max-height: 150px;
+    float: right;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+
+.inzerat h3{
+
+    font-variant-caps: small-caps;
+    font-weight: bolder;
+    font-size: x-large;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.inzerat p{
+    margin-top: 1%;
+    margin-bottom: inherit;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+
+
+.inzerat-detail {
+    border-radius: 25px;
+    text-align: left;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #262626;
+    background-color: #b3b35f;
+    border: 5px #b3b35f solid;
+    font-weight: normal !important;
+}
+
+.inzerat-detail hr{
+    background-color: #262626;
+    margin: 10px 0 10px;
+}
+
+.inzerat-detail img{
+    float: right;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+
+.inzerat-detail h3{
+    font-variant-caps: small-caps;
+    font-weight: bolder;
+    font-size: x-large;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+
+.inzerat-detail p {
+    margin-top: 1%;
+    margin-bottom: inherit;
+
+}
+
 
 
 .icena {
@@ -143,8 +182,24 @@ table {
     font-weight: bold;
 }
 
+.forum {
+    font-weight: bold;
+    background-color: #b3b35f;
+    border: 5px #262626 solid;
+}
+
+
+.forumnova {
+
+    font-weight: bold;
+    background-color: #c7c7a7;
+    border: 5px #262626 solid;
+}
+
+
 
 @media (max-width: 1200px) {
+
 
     .inzerat p{
         -webkit-line-clamp: 5 !important;
@@ -173,6 +228,7 @@ table {
         padding-right: 2%;
 
     }
+
 
     .inzerat p{
         -webkit-line-clamp: 4 !important;

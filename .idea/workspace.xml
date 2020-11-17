@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a65bd77-287d-4030-9dc6-36e71cf66c48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Databaza.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inzerat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spravca.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inzerat_detail.php" afterDir="false" />
+    <list default="true" id="0a65bd77-287d-4030-9dc6-36e71cf66c48" name="Default Changelist" comment="pridane vytvaranie, editovanie a mazanie inzeratov">
+      <change afterPath="$PROJECT_DIR$/inzeraty/inzerat_edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inzeraty/inzerat_novy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inzeraty.php" beforeDir="false" afterPath="$PROJECT_DIR$/inzeraty.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Databaza.php" beforeDir="false" afterPath="$PROJECT_DIR$/Databaza.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inzerat.php" beforeDir="false" afterPath="$PROJECT_DIR$/inzeraty/Inzerat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spravca.php" beforeDir="false" afterPath="$PROJECT_DIR$/Spravca.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inzerat_detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/inzeraty/inzerat_detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inzeraty.php" beforeDir="false" afterPath="$PROJECT_DIR$/inzeraty/inzeraty.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kategorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/kategorie.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registracia.php" beforeDir="false" afterPath="$PROJECT_DIR$/registracia.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -47,10 +51,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../vlastne" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/inzeraty" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Juro\Desktop\VS\3 ROCNIK\ZIMNY\VAII\php_mysql\www\SEMESTRALKA\inzeraty" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -68,7 +77,8 @@
       <workItem from="1605351952801" duration="9014000" />
       <workItem from="1605527115697" duration="8005000" />
       <workItem from="1605549463479" duration="1260000" />
-      <workItem from="1605551982746" duration="10355000" />
+      <workItem from="1605551982746" duration="10637000" />
+      <workItem from="1605609242856" duration="23572000" />
     </task>
     <task id="LOCAL-00001" summary="verzia 1.0">
       <created>1603227800576</created>
@@ -112,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605534741489</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="pripojenie databazy a nacitavanie inzeratov z databazovej tabulky (pridane triedy Spravca.php, Databaza.php, Inzerat.php)">
+      <created>1605562494073</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605562494073</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +141,9 @@
     <MESSAGE value="upravena struktura inzeratov a css s nimi spojene" />
     <MESSAGE value="premenovane html stranky" />
     <MESSAGE value="vytvorenie php suborov, pridany login.php a registracia.php, poupravene css" />
-    <option name="LAST_COMMIT_MESSAGE" value="vytvorenie php suborov, pridany login.php a registracia.php, poupravene css" />
+    <MESSAGE value="pripojenie databazy a nacitavanie inzeratov z databazovej tabulky (pridane triedy Spravca.php, Databaza.php, Inzerat.php)" />
+    <MESSAGE value="pridane vytvaranie, editovanie a mazanie inzeratov" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridane vytvaranie, editovanie a mazanie inzeratov" />
   </component>
   <component name="WindowStateProjectService">
     <state x="559" y="186" key="#Deployment" timestamp="1603228242882">
@@ -143,46 +162,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="747" y="220" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605558079321" />
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1605553699551">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1605621116082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605553699551" />
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605621116082" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605534692731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605534692731" />
-    <state x="558" y="115" key="CommitChangelistDialog2" timestamp="1605534740270">
+    <state x="558" y="115" key="CommitChangelistDialog2" timestamp="1605632923103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="558" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605534740270" />
-    <state x="740" y="260" key="FileChooserDialogImpl" timestamp="1605555713031">
+    <state x="558" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605632923103" />
+    <state x="1383" y="297" key="FileChooserDialogImpl" timestamp="1605610087476">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605555713031" />
+    <state x="1383" y="297" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605610087476" />
     <state x="662" y="242" key="NewPhpClassDialog" timestamp="1605556519844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="662" y="242" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605556519844" />
-    <state x="795" y="442" key="NewPhpFileDialog" timestamp="1605552295081">
+    <state x="795" y="442" key="NewPhpFileDialog" timestamp="1605614727508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="795" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605552295081" />
-    <state x="607" y="261" key="Vcs.Push.Dialog.v2" timestamp="1605534748718">
+    <state x="795" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605614727508" />
+    <state x="607" y="261" key="Vcs.Push.Dialog.v2" timestamp="1605562497228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="607" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605534748718" />
+    <state x="607" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605562497228" />
     <state x="859" y="396" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605549624667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="859" y="396" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1920.1040@0.0.1920.1040" timestamp="1605549624667" />
-    <state x="474" y="311" width="771" height="567" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605559835907">
+    <state x="474" y="311" width="771" height="567" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605632656625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="474" y="311" width="771" height="567" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605559835907" />
-    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603228509421">
+    <state x="474" y="311" width="771" height="567" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605632656625" />
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605629743637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603228509421" />
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605629743637" />
     <state x="692" y="363" key="git4idea.ui.GitTagDialog" timestamp="1603228354909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
