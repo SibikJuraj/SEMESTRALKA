@@ -87,7 +87,7 @@ $inzerat = $spravca->getDatabaza()->getInzerat((int) $_GET['id']);
     <div class="form-group">
         <label for="obrazok">URL obrázka:</label>
         <br/>
-        <input class="form-control-file " id="obrazok" type="url" name="obrazok" value="<?php echo $inzerat->getObrazok() ?>" required>
+        <input class="form-control " id="obrazok" type="url" name="obrazok" value="<?php echo $inzerat->getObrazok() ?>" required>
         <br/>
 
     </div>

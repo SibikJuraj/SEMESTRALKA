@@ -80,7 +80,7 @@
         <div class="form-group">
             <label for="obrazok">URL obrázka:</label>
             <br/>
-            <input class="form-control-file " id="obrazok" type="url" name="obrazok" value="" required>
+            <input class="form-control " id="obrazok" type="url" name="obrazok" value="" required>
             <br/>
 
         </div>

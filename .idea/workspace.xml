@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0a65bd77-287d-4030-9dc6-36e71cf66c48" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spravca.php" beforeDir="false" afterPath="$PROJECT_DIR$/Spravca.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inzeraty/inzerat_detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/inzeraty/inzerat_detail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inzeraty/inzerat_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/inzeraty/inzerat_edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inzeraty/inzerat_novy.php" beforeDir="false" afterPath="$PROJECT_DIR$/inzeraty/inzerat_novy.php" afterDir="false" />
     </list>
@@ -76,7 +74,7 @@
       <workItem from="1605549463479" duration="1260000" />
       <workItem from="1605551982746" duration="10637000" />
       <workItem from="1605609242856" duration="34691000" />
-      <workItem from="1605644880035" duration="1691000" />
+      <workItem from="1605644880035" duration="2053000" />
     </task>
     <task id="LOCAL-00001" summary="verzia 1.0">
       <created>1603227800576</created>
@@ -141,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605644376568</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="presunuté html kódy zo Spravcu do inzerat_edit a inzerat_detail">
+      <created>1605646836102</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1605646836102</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +161,8 @@
     <MESSAGE value="pripojenie databazy a nacitavanie inzeratov z databazovej tabulky (pridane triedy Spravca.php, Databaza.php, Inzerat.php)" />
     <MESSAGE value="pridane vytvaranie, editovanie a mazanie inzeratov" />
     <MESSAGE value="drobné úpravy" />
-    <option name="LAST_COMMIT_MESSAGE" value="drobné úpravy" />
+    <MESSAGE value="presunuté html kódy zo Spravcu do inzerat_edit a inzerat_detail" />
+    <option name="LAST_COMMIT_MESSAGE" value="presunuté html kódy zo Spravcu do inzerat_edit a inzerat_detail" />
   </component>
   <component name="WindowStateProjectService">
     <state x="559" y="186" key="#Deployment" timestamp="1603228242882">
@@ -183,10 +189,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605534692731" />
-    <state x="558" y="115" key="CommitChangelistDialog2" timestamp="1605644375973">
+    <state x="558" y="115" key="CommitChangelistDialog2" timestamp="1605646835286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="558" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605644375973" />
+    <state x="558" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605646835286" />
     <state x="184" y="85" key="DiffContextDialog" timestamp="1605645365876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -255,10 +261,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="652" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605645401681" />
-    <state x="607" y="261" key="Vcs.Push.Dialog.v2" timestamp="1605644378257">
+    <state x="607" y="261" key="Vcs.Push.Dialog.v2" timestamp="1605646838869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="607" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605644378257" />
+    <state x="607" y="261" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605646838869" />
     <state x="859" y="396" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605549624667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
